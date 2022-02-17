@@ -1,0 +1,28 @@
+<%- include("partials/header") -%>
+
+
+<form action="/submitcode" method="post">
+
+<% if(!checking){ %>
+    <center><h1>Enter Your Text or Code Snippets</h1></center>
+    <input style="margin-left: 15%;
+    margin-top: 3%;width: 65%;" placeholder="Enter Title" type="text" name="title"autocomplete="off"/><br>
+    <textarea  id="1" name="ta" rows="8" cols="100">
+    </textarea>
+    <button 
+    type="submit" name="btn" value="added"style="margin-top: 3%; margin-left: 45%;background-color:#1abc9c;" class="btn btn-outline-info">Submit</button>
+</form>
+<%}%>
+
+<% if(checking){ %>
+    <center><h1>Your code is Successfully saved</h1></center>
+    
+   <p> You use this key and url to decript or access your data</p>
+   <p> key:<%= object.key %> </p>
+   <p> Short url:<%= object.url %> </p>
+    <button 
+    type="Submit"   name="btn" value="Add" style="margin-top: 3%; margin-left: 45%;background-color:#1abc9c;" class="btn btn-outline-info">Add New</button>
+
+<%}%>
+
+<%- include("partials/footer") -%>

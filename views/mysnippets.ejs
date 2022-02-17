@@ -1,0 +1,11 @@
+<%- include("partials/header") -%>
+<h1>Recently Created Snippets</h1>
+
+<% for(var i=0;i<objects.length;i++){%>
+  <h1><%= objects[i].title %></h1>
+  <p>
+    <%= objects[i].content.substring(0,100)+"....." %>
+    <a href="<%= objects[i].url %>">Read More</a>
+  </p>
+  <%}%> <%- include("partials/footer") -%>
+</posts.length;i++){%>
