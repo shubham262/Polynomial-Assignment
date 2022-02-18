@@ -35,12 +35,15 @@
 https://github.com/shubham262/Polynomial-Assignment.git
 
 #change directory
+
 cd polynomial;
 
 #install dependencies
+
 npm i;
 
-#run server t
+#run server 
+
 node app.js;
 
 #Boom✨ your project is live
